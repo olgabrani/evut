@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Evia Ultra Trail 2026</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --green:  #4a7c59;
+      --muted:  #9a9590;
+      --border: #e8e4df;
+      --text:   #1a1a18;
+    }
+
+    body {
+      background: #fff;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--text);
+      min-height: 100vh;
+    }
+
+    /* ── HEADER ── */
+    header {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 4rem 1.5rem 2.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .eyebrow {
+      font-size: .72rem;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      color: var(--green);
+      font-weight: 600;
+      margin-bottom: .75rem;
+    }
+
+    header h1 {
+      font-size: clamp(2rem, 6vw, 3.2rem);
+      font-weight: 700;
+      letter-spacing: -.01em;
+      line-height: 1.1;
+      color: var(--text);
+    }
+
+    /* ── STATS ── */
+    .stats {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 1.4rem 1.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.8rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .stat {
+      display: flex;
+      flex-direction: column;
+      gap: .15rem;
+    }
+
+    .stat-value {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text);
+      letter-spacing: -.01em;
+    }
+
+    .stat-label {
+      font-size: .72rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    /* ── LINKS LIST ── */
+    main {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 0 1.5rem 5rem;
+    }
+
+    .links {
+      list-style: none;
+    }
+
+    .links li {
+      border-bottom: 1px solid var(--border);
+    }
+
+    .link-row,
+    .link-row-disabled {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.3rem 0;
+      text-decoration: none;
+      color: var(--text);
+      gap: 1rem;
+      transition: color .15s;
+    }
+
+    .link-row:hover { color: var(--green); }
+
+    .link-row-disabled {
+      cursor: not-allowed;
+      color: var(--muted);
+    }
+
+    .link-meta {
+      display: flex;
+      flex-direction: column;
+      gap: .2rem;
+    }
+
+    .link-category {
+      font-size: .68rem;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .link-row-disabled .link-category { color: var(--border); }
+
+    .link-title {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    .link-arrow {
+      font-size: 1rem;
+      color: var(--muted);
+      flex-shrink: 0;
+      transition: transform .15s;
+    }
+
+    .link-row:hover .link-arrow {
+      transform: translateX(3px);
+      color: var(--green);
+    }
+
+    .soon-tag {
+      font-size: .65rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: .15rem .45rem;
+      flex-shrink: 0;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+      font-size: .75rem;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+    }
+
+    footer a { color: var(--green); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+<!-- ═══ HEADER ═══ -->
+<header>
+  <p class="eyebrow">Εύβοια · 4 Απριλίου 2026</p>
+  <h1>Evia Ultra Trail</h1>
+</header>
+
+<!-- ═══ STATS ═══ -->
+<div class="stats">
+  <div class="stat">
+    <span class="stat-value">108.5 km</span>
+    <span class="stat-label">Απόσταση</span>
+  </div>
+  <div class="stat">
+    <span class="stat-value">+5 478 m</span>
+    <span class="stat-label">Υψομετρική διαφορά</span>
+  </div>
+  <div class="stat">
+    <span class="stat-value">26 h</span>
+    <span class="stat-label">Χρονικό όριο</span>
+  </div>
+  <div class="stat">
+    <span class="stat-value">04/04/2026</span>
+    <span class="stat-label">Ημερομηνία</span>
+  </div>
+</div>
+
+<!-- ═══ LINKS ═══ -->
+<main>
+  <ul class="links">
+
+    <li>
+      <a class="link-row" href="https://dromeisevias.gr/evia-ultra-trail-gr/#info" target="_blank" rel="noopener noreferrer">
+        <div class="link-meta">
+          <span class="link-category">Επίσημη σελίδα</span>
+          <span class="link-title">Πληροφορίες Αγώνα</span>
+        </div>
+        <span class="link-arrow">→</span>
+      </a>
+    </li>
+
+    <li>
+      <a class="link-row" href="https://www.facebook.com/profile.php?id=100057352723465" target="_blank" rel="noopener noreferrer">
+        <div class="link-meta">
+          <span class="link-category">Social media</span>
+          <span class="link-title">Facebook page διοργάνωσης</span>
+        </div>
+        <span class="link-arrow">→</span>
+      </a>
+    </li>
+
+    <li>
+      <a class="link-row" href="https://docs.google.com/spreadsheets/d/1-u_82G7G3rZLerQzIyGvKPC4siqGM1QDLPDnn419t_E/edit" target="_blank" rel="noopener noreferrer">
+        <div class="link-meta">
+          <span class="link-category">Προγραμματισμός</span>
+          <span class="link-title">Εκτιμώμενοι Χρόνοι</span>
+        </div>
+        <span class="link-arrow">→</span>
+      </a>
+    </li>
+
+    <li>
+      <div class="link-row-disabled">
+        <div class="link-meta">
+          <span class="link-category">Αποτελέσματα</span>
+          <span class="link-title">Αποτελέσματα Αγώνα</span>
+        </div>
+        <span class="soon-tag">Σύντομα</span>
+      </div>
+    </li>
+
+    <li>
+      <a class="link-row" href="https://itra.run/api/RunnerSpace/GetRunnerSpace?memberString=v%2Bz2CjVRBAD%2B3h4kdDcbZg%3D%3D" target="_blank" rel="noopener noreferrer">
+        <div class="link-meta">
+          <span class="link-category">Ατομικό προφίλ</span>
+          <span class="link-title">ITRA Profile</span>
+        </div>
+        <span class="link-arrow">→</span>
+      </a>
+    </li>
+
+  </ul>
+</main>
+
+<!-- ═══ FOOTER ═══ -->
+<footer>
+  <p>Evia Ultra Trail 2026 &mdash; <a href="https://dromeisevias.gr" target="_blank" rel="noopener noreferrer">Δρόμοι της Εύβοιας</a></p>
+</footer>
+
+</body>
+</html>
