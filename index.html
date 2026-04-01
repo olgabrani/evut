@@ -92,6 +92,34 @@
       border-bottom: 1px solid var(--border);
     }
 
+    .link-left {
+      display: flex;
+      align-items: center;
+      gap: .9rem;
+    }
+
+    .link-icon {
+      flex-shrink: 0;
+      width: 38px;
+      height: 38px;
+      border-radius: 10px;
+      background: #f4f2ef;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--green);
+      transition: background .15s, color .15s;
+    }
+
+    .link-row:hover .link-icon {
+      background: #e3ede7;
+    }
+
+    .link-row-disabled .link-icon {
+      color: var(--muted);
+      background: #f4f2ef;
+    }
+
     .link-row,
     .link-row-disabled {
       display: flex;
@@ -203,9 +231,14 @@
 
     <li>
       <a class="link-row" href="https://dromeisevias.gr/evia-ultra-trail-gr/#info" target="_blank" rel="noopener noreferrer">
-        <div class="link-meta">
-          <span class="link-category">Επίσημη σελίδα</span>
-          <span class="link-title">Πληροφορίες Αγώνα</span>
+        <div class="link-left">
+          <span class="link-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 13 8 13s8-7.75 8-13a8 8 0 0 0-8-8z"/><circle cx="12" cy="10" r="3"/></svg>
+          </span>
+          <div class="link-meta">
+            <span class="link-category">Επίσημη σελίδα</span>
+            <span class="link-title">Πληροφορίες Αγώνα</span>
+          </div>
         </div>
         <span class="link-arrow">→</span>
       </a>
@@ -213,9 +246,14 @@
 
     <li>
       <a class="link-row" href="https://www.facebook.com/profile.php?id=100057352723465" target="_blank" rel="noopener noreferrer">
-        <div class="link-meta">
-          <span class="link-category">Social media</span>
-          <span class="link-title">Facebook page διοργάνωσης</span>
+        <div class="link-left">
+          <span class="link-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </span>
+          <div class="link-meta">
+            <span class="link-category">Social media</span>
+            <span class="link-title">Facebook page διοργάνωσης</span>
+          </div>
         </div>
         <span class="link-arrow">→</span>
       </a>
@@ -223,9 +261,14 @@
 
     <li>
       <a class="link-row" href="https://docs.google.com/spreadsheets/d/1-u_82G7G3rZLerQzIyGvKPC4siqGM1QDLPDnn419t_E/edit" target="_blank" rel="noopener noreferrer">
-        <div class="link-meta">
-          <span class="link-category">Προγραμματισμός</span>
-          <span class="link-title">Εκτιμώμενοι Χρόνοι</span>
+        <div class="link-left">
+          <span class="link-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+          </span>
+          <div class="link-meta">
+            <span class="link-category">Προγραμματισμός</span>
+            <span class="link-title">Εκτιμώμενοι Χρόνοι</span>
+          </div>
         </div>
         <span class="link-arrow">→</span>
       </a>
@@ -233,9 +276,14 @@
 
     <li>
       <div class="link-row-disabled">
-        <div class="link-meta">
-          <span class="link-category">Αποτελέσματα</span>
-          <span class="link-title">Αποτελέσματα Αγώνα</span>
+        <div class="link-left">
+          <span class="link-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16M10 14v8M14 14v8M6 2v11a6 6 0 0 0 12 0V2H6z"/></svg>
+          </span>
+          <div class="link-meta">
+            <span class="link-category">Αποτελέσματα</span>
+            <span class="link-title">Αποτελέσματα Αγώνα</span>
+          </div>
         </div>
         <span class="soon-tag">Σύντομα</span>
       </div>
@@ -243,9 +291,14 @@
 
     <li>
       <a class="link-row" href="https://itra.run/api/RunnerSpace/GetRunnerSpace?memberString=v%2Bz2CjVRBAD%2B3h4kdDcbZg%3D%3D" target="_blank" rel="noopener noreferrer">
-        <div class="link-meta">
-          <span class="link-category">Ατομικό προφίλ</span>
-          <span class="link-title">ITRA Profile</span>
+        <div class="link-left">
+          <span class="link-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="7" r="4"/><path d="M6 21v-2a6 6 0 0 1 12 0v2"/></svg>
+          </span>
+          <div class="link-meta">
+            <span class="link-category">Ατομικό προφίλ</span>
+            <span class="link-title">ITRA Profile</span>
+          </div>
         </div>
         <span class="link-arrow">→</span>
       </a>
